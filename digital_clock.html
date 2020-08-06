@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="digital_clock.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">Country</a></li>
+            <li><a href="#">time zone</a></li>
+            <li style="margin-left: auto;"><a href="#">about us</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <p style="font-size: 2em; font-weight: lighter;">current time and date:</p>
+        <p id="time"></p>
+        <!-- <input type="button" value="America"> -->
+        <!-- <select id="drop down">
+            <option>-------------</option>
+            <option value="America()" ><a href="#" >america</a></option> 
+            <option value="America"><a href="#">china</a></option> 
+            <option value="America"><a href="#">italy</a></option> 
+        </select> -->
+    </div>
+    
+
+    <script>
+        clr= setInterval(() => {
+            let d= new Date();
+            document.getElementById("time").innerText=d.toLocaleTimeString()+ " on " +d.toLocaleDateString();
+            d.set
+        }, 1000);
+        
+
+    </script>
+</body>
+</html>
